@@ -4,14 +4,16 @@ import { useEffect } from 'react';
 // import styles from './App.module.scss';
 
 export default function App() {
+  let text = 'Hello Mudro';
   useEffect(() => {
-    const tg = window.Telegram.WebApp;
-    tg.ready();
+    const tg = window.Telegram?.WebApp;
+    if (tg) tg.ready();
+    else text = 'please use telegram';
   }, []);
 
   return (
     <main>
-      <h1>Hello Mudro!</h1>
+      <h1>{text}</h1>
       {/* <Router>
         <Header />
         <Routes>
