@@ -1,15 +1,15 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // import styles from './App.module.scss';
 
 export default function App() {
-  let text = 'Hello Mudro';
+  const [text, setText] = useState('Hello Mudro');
   useEffect(() => {
     const tg = window.Telegram?.WebApp;
     if (tg) tg.ready();
-    else text = 'please use telegram';
-  }, []);
+    else setText('please use telegram');
+  });
 
   return (
     <main>
