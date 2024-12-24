@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/mudrotop/static/css/main.31d6cfe0.css",
-    "main.js": "/mudrotop/static/js/main.e884067a.js",
+    "main.js": "/mudrotop/static/js/main.a0d0e1ea.js",
     "index.html": "/mudrotop/index.html",
-    "main.e884067a.js.map": "/mudrotop/static/js/main.e884067a.js.map"
+    "main.a0d0e1ea.js.map": "/mudrotop/static/js/main.a0d0e1ea.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.e884067a.js"
+    "static/js/main.a0d0e1ea.js"
   ]
 }
