@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { WebApp } from 'telegram-web-app';
+// import { WebApp } from 'telegram-web-app';
 
 // import styles from './App.module.scss';
 
@@ -8,7 +8,8 @@ export default function App() {
   useEffect(() => {
     if (window.Telegram && window.Telegram.WebApp) {
       console.log(`!!!!!!! ${window.Telegram}`);
-      WebApp.init();
+      // WebApp.init();
+      window.Telegram.WebApp.ready();
     } else setText('please use telegram');
   });
 
