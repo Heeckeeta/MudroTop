@@ -16,6 +16,7 @@ export default function App() {
   return (
     <main>
       <h1>{text}</h1>
+      <h1>{window.navigator.userAgent}</h1>
     </main>
   );
 }
