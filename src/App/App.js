@@ -6,8 +6,10 @@ import { WebApp } from 'telegram-web-app';
 export default function App() {
   const [text, setText] = useState('Hello Mudro');
   useEffect(() => {
-    if (window.Telegram) WebApp.init();
-    else setText('please use telegram');
+    if (window.Telegram) {
+      console.log(window.Telegram);
+      WebApp.init();
+    } else setText('please use telegram');
   });
 
   return (
