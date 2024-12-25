@@ -4,9 +4,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <title>MudroTop</title>
-  <!-- <script type="text/javascript" src="https://telegram.org/js/telegram-web-app.js" defer></script> -->
+  <style>
+    #loader{
+      position: absolute;
+      top: 40vh;
+      height: 20vh;
+      width: 20vh;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    #load__gif{
+      width: 100%;
+      height: 100%;
+    }
+
+    #loader.hidden{
+      opacity: 0;
+      transition: opacity 0.1s ease;
+    }
+  </style>
 </head>
 <body class="body">
+  <div id="loader">
+    <img src="./loading.gif" id="load__gif" >
+  </div>
+  <script>
+    window.onload = () => {
+      const loader = document.getElementById('loader');
+      if (loader) {
+        loader.classList.add('hidden');
+        setTimeout(() => loader.remove(), 100);
+      }
+    };
+  </script>
   <div id="root"></div>
 </body>
 </html>

@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Pagination, Alert } from 'antd';
 
-import loading from '../../images/loading.gif';
 import api from '../../api.js';
 import Card from '../Card/Card.js';
 
@@ -11,7 +10,6 @@ export default function List({ filter }) {
   const [films, setFilms] = useState([]);
   const [nowFilms, setNowFilms] = useState([]);
   const [page, setPage] = useState(1);
-  const [load, setLoad] = useState(true);
   const [error, setError] = useState(false);
 
   const onPagination = (p) => {
@@ -23,21 +21,13 @@ export default function List({ filter }) {
     api.getFilms(filter).then((res) => {
       if (!res) {
         setError(true);
-        setLoad(false);
       } else {
-        setLoad(false);
         setFilms(res);
         setNowFilms(res.slice(0, 12));
       }
     });
   }, [filter]);
 
-  if (load)
-    return (
-      <div className={styles.load}>
-        <img src={loading} className={styles.load__gif} />
-      </div>
-    );
   if (error)
     return (
       <Alert
