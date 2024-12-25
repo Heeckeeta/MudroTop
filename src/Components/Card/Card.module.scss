@@ -1,0 +1,88 @@
+.card{
+  width: 90vw;
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .149);
+}
+
+.img{
+  width: 16%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.poster{
+  width: 100%;
+  height: 100%;
+}
+
+.info{
+  width: 81%;
+  margin-right: 0;
+  margin-left: auto;
+  height: 100%;
+}
+
+.info__line{
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.title{
+  font-weight: 800;
+  margin-left: 15px;
+}
+
+.mudriki{
+  color: hotpink;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.rating{
+  margin-left: 15px;
+}
+
+.time{
+  margin-left: 15px;
+}
+
+.year{
+  margin-left: 15px;
+}
+
+.countrys{
+  margin-left: 38px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.country{
+  margin-right: 5px;
+}
+
+.genres{
+  margin-left: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.genre{
+  margin-right: 5px;
+}
+
+.open{
+  margin-left: auto;
+  margin-top: auto;
+  width: 40px;
+  height: 40px;
+}
+
+.kp{
+  width: 100%;
+  height: 100%;
+}
