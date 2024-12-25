@@ -1,0 +1,26 @@
+.form{
+  background-color: white;
+  border-radius: 5px;
+  width: 90vw;
+  margin: 15px 5vw 15px 5vw;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.input{
+  display: block;
+  border: 1px solid hotpink;
+  border-radius: 3px;
+  width: 100%;
+  margin: 5px 0 5px 0;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.submit{
+  border-width: 0;
+  border-radius: 3px;
+  color: black;
+  height: 20px;
+  background-color: #ebeef3;;
+}

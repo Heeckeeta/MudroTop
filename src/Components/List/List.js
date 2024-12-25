@@ -7,7 +7,7 @@ import Card from '../Card/Card.js';
 
 import styles from './List.module.scss';
 
-export default function List() {
+export default function List({ filter }) {
   const [films, setFilms] = useState([]);
   const [nowFilms, setNowFilms] = useState([]);
   const [page, setPage] = useState(1);
@@ -16,24 +16,21 @@ export default function List() {
 
   const onPagination = (p) => {
     setPage(p);
-    setNowFilms(films.slice(20 * (p - 1), 20 * p));
+    setNowFilms(films.slice(12 * (p - 1), 12 * p));
   };
 
   useEffect(() => {
-    api.getFilms().then((res) => {
+    api.getFilms(filter).then((res) => {
       if (!res) {
         setError(true);
         setLoad(false);
       } else {
         setLoad(false);
         setFilms(res);
-        setNowFilms(res.slice(0, 20));
-        console.log(res);
-        console.log(nowFilms);
-        console.log(films);
+        setNowFilms(res.slice(0, 12));
       }
     });
-  }, []);
+  }, [filter]);
 
   if (load)
     return (
@@ -63,7 +60,7 @@ export default function List() {
         <Pagination
           onChange={onPagination}
           total={films.length}
-          pageSize="20"
+          pageSize="12"
           current={page}
           showSizeChanger={false}
           className={styles.pagination}

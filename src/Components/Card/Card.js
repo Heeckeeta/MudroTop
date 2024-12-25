@@ -5,7 +5,6 @@ import styles from './Card.module.scss';
 
 export default function Card({ card }) {
   const src = card.poster?.url ? card.poster.url : placeholder;
-  console.log(src + '   !   ' + card?.poster.url);
 
   return (
     <div className={styles.card}>
