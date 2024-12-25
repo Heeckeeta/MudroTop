@@ -7,7 +7,7 @@ import Filters from '../Filters/Filters.js';
 import styles from './App.module.scss';
 
 export default function App() {
-  const [filter, setFilter] = useState({ year: '', mins: '', genre: '' });
+  const [filter, setFilter] = useState({ year: '', mins: '', genre: '', notGenre: '' });
 
   return (
     <main className={styles.list}>
