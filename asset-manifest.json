@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/MudroTop/static/css/main.6f74b70b.css",
-    "main.js": "/MudroTop/static/js/main.b63fef5b.js",
+    "main.css": "/MudroTop/static/css/main.dd663848.css",
+    "main.js": "/MudroTop/static/js/main.67738e8d.js",
     "static/media/loading.gif": "/MudroTop/static/media/loading.52e012d7074445ae5149.gif",
     "static/media/kp.png": "/MudroTop/static/media/kp.1170d72da1a931a69534.png",
     "static/media/card__placeholder.png": "/MudroTop/static/media/card__placeholder.64d09bb8ac0f8c0e375a.png",
     "index.html": "/MudroTop/index.html",
-    "main.6f74b70b.css.map": "/MudroTop/static/css/main.6f74b70b.css.map",
-    "main.b63fef5b.js.map": "/MudroTop/static/js/main.b63fef5b.js.map"
+    "main.dd663848.css.map": "/MudroTop/static/css/main.dd663848.css.map",
+    "main.67738e8d.js.map": "/MudroTop/static/js/main.67738e8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f74b70b.css",
-    "static/js/main.b63fef5b.js"
+    "static/css/main.dd663848.css",
+    "static/js/main.67738e8d.js"
   ]
 }
