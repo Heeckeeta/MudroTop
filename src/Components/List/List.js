@@ -23,6 +23,7 @@ export default function List({ filter }) {
         setError(true);
       } else {
         setFilms(res);
+        if (filter.year || filter.mins || filter.genre || filter.notGenre) setPage(1);
         setNowFilms(res.slice(0, 12));
       }
     });
