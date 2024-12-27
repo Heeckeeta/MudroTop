@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MudroTop/static/css/main.ae0a2ff4.css",
-    "main.js": "/MudroTop/static/js/main.519bc2ea.js",
+    "main.js": "/MudroTop/static/js/main.50691205.js",
     "static/media/kp.png": "/MudroTop/static/media/kp.1170d72da1a931a69534.png",
     "static/media/card__placeholder.png": "/MudroTop/static/media/card__placeholder.64d09bb8ac0f8c0e375a.png",
     "index.html": "/MudroTop/index.html",
     "main.ae0a2ff4.css.map": "/MudroTop/static/css/main.ae0a2ff4.css.map",
-    "main.519bc2ea.js.map": "/MudroTop/static/js/main.519bc2ea.js.map"
+    "main.50691205.js.map": "/MudroTop/static/js/main.50691205.js.map"
   },
   "entrypoints": [
     "static/css/main.ae0a2ff4.css",
-    "static/js/main.519bc2ea.js"
+    "static/js/main.50691205.js"
   ]
 }
