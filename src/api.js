@@ -9,8 +9,10 @@ const api = {
         if (filters.genre && (!el.genres || el.genres.findIndex((el) => el.name == filters.genre) == -1)) {
           return false;
         }
-        if (filters.notGenre && el.genres && el.genres.findIndex((el) => el.name == filters.notGenre) != -1) {
-          return false;
+        if (filters.notGenres && el.genres) {
+          for (let i = 0; i < filters.notGenres.length; i++) {
+            if (el.genres.findIndex((el) => el.name == filters.notGenres[i]) != -1) return false;
+          }
         }
         return true;
       });

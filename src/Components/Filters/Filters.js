@@ -10,7 +10,16 @@ export default function Fiters({ onForm }) {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const data = { year, mins, genre, notGenre };
+    let notGenres = '';
+    if (notGenre) {
+      notGenres = notGenre.split(' ');
+      for (let i = 0; i < notGenres.length; i++) {
+        if (notGenres[i][notGenres[i].length - 1] === ',') {
+          notGenres[i] = notGenres[i].slice(0, notGenres[i].length - 1);
+        }
+      }
+    }
+    const data = { year, mins, genre, notGenres };
     onForm(data);
     setYear('');
     setMins('');
@@ -39,9 +48,9 @@ export default function Fiters({ onForm }) {
         value={genre}
       />
       <input
-        placeholder="Убрать жанр:"
+        placeholder="Убрать жанры: введите через пробел"
         className={styles.input}
-        onChange={(e) => setNotGenre(e.target.value.toLowerCase().trim())}
+        onChange={(e) => setNotGenre(e.target.value.toLowerCase())}
         value={notGenre}
       />
       <input type="submit" className={styles.submit} value="Найти" />
